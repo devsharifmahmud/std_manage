@@ -7,6 +7,7 @@ def home(request):
 def std_add(request):
     if request.method == 'POST':
         print('Added')
+        #retreive the user inputs
         std_roll = request.POST.get('roll')
         std_name = request.POST.get('name')
         std_email = request.POST.get('email')
