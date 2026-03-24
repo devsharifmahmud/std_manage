@@ -2,7 +2,8 @@ from django.shortcuts import render,redirect
 from .models import Student
 # Create your views here.
 def home(request):
-    return render(request, 'std/home.html', {})
+    std = Student.objects.all()
+    return render(request, 'std/home.html', {'std':std})
 
 def std_add(request):
     if request.method == 'POST':
