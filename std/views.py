@@ -21,5 +21,6 @@ def std_add(request):
         s.email = std_email
         s.phone = std_phone
         s.address = std_address
+        s.save()
 
     return render(request, 'std/std_add.html', {})
