@@ -7,4 +7,5 @@ def home(request):
 def std_add(request):
     if request.method == 'POST':
         print('Added')
+        std_roll = request.POST.get('roll')
     return render(request, 'std/std_add.html', {})
