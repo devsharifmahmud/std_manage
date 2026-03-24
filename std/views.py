@@ -22,5 +22,6 @@ def std_add(request):
         s.phone = std_phone
         s.address = std_address
         s.save()
+        return redirect('/std/home')
 
     return render(request, 'std/std_add.html', {})
