@@ -13,4 +13,7 @@ def std_add(request):
         std_email = request.POST.get('email')
         std_phone = request.POST.get('phone')
         std_address = request.POST.get('address')
+
+        #create an objects for models
+
     return render(request, 'std/std_add.html', {})
