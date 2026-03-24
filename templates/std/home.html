@@ -28,7 +28,14 @@
                             </thead>
                             <tbody>
                             {% for s in std %}
-
+                            <tr>
+                                <td>{{forloop_counter}}</td>
+                                <td>{{s.roll}}</td>
+                                <td>{{s.name}}</td>
+                                <td>{{s.email}}</td>
+                                <td>{{s.phone}}</td>
+                                <td>{{s.address}}</td>
+                            </tr>
                             {% endfor %}
                             </tbody>
                         </div>
