@@ -5,5 +5,5 @@ urlpatterns = [
     path('', home),
     path('home/', home),
     path('add-std/', std_add),
-    path('delete-std/<int:roll', delete_std),
+    path('delete-std/<int:roll>', delete_std),
 ]
