@@ -38,3 +38,8 @@ def update_std(request, roll):
     return render(request, 'std/std_update.html', {'std':std})
 
 def do_update_std(request, roll):
+    std_roll = request.POST.get('std_roll')
+    std_name = request.POST.get('std_name')
+    std_email = request.POST.get('std_email')
+    std_phone = request.POST.get('std_phone')
+    std_address = request.POST.get('std_address')
