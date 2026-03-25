@@ -53,3 +53,4 @@ def do_update_std(request, roll):
     std.address = std_address
 
     std.save()
+    return redirect('/std/home')
