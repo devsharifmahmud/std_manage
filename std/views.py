@@ -51,3 +51,5 @@ def do_update_std(request, roll):
     std.email = std_email
     std.phone = std_phone
     std.address = std_address
+
+    std.save()
