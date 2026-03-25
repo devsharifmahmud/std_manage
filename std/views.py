@@ -26,3 +26,5 @@ def std_add(request):
         return redirect('/std/home')
 
     return render(request, 'std/std_add.html', {})
+
+def delete_std(request):
