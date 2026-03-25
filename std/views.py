@@ -27,4 +27,6 @@ def std_add(request):
 
     return render(request, 'std/std_add.html', {})
 
-def delete_std(request):
+def delete_std(request, roll):
+    s = Student.objects.get(pk=roll)
+    s.delete()
