@@ -36,3 +36,5 @@ def delete_std(request, roll):
 def update_std(request, roll):
     std = Student.objects.get(pk=roll)
     return render(request, 'std/std_update.html', {'std':std})
+
+def do_update_std(request, roll):
