@@ -43,3 +43,11 @@ def do_update_std(request, roll):
     std_email = request.POST.get('std_email')
     std_phone = request.POST.get('std_phone')
     std_address = request.POST.get('std_address')
+
+    std = Student.objects.get(pk=roll)
+
+    std.roll = std_roll
+    std.name = std_name
+    std.email = std_email
+    std.phone = std_phone
+    std.address = std_address
