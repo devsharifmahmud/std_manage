@@ -30,3 +30,5 @@ def std_add(request):
 def delete_std(request, roll):
     s = Student.objects.get(pk=roll)
     s.delete()
+
+    return redirect('/std/home')
